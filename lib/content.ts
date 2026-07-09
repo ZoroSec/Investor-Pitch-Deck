@@ -25,7 +25,7 @@ export const hero = {
   headline: "Turn Your Startup Into an Investor-Ready Pitch",
   accent: "Investor-Ready",
   subheadline:
-    "Build compelling pitch decks, uncover weaknesses before investors do, practice live with AI investors, and raise capital with confidence.",
+    "Build compelling decks, uncover weaknesses before investors do, practice live with AI investors, and raise with confidence.",
   primaryCta: "Start Building Free",
   secondaryCta: "Watch Demo",
 };
@@ -42,7 +42,7 @@ export const trustedBy = [
 export const problems = [
   {
     title: "Investors ask difficult questions",
-    body: "Unit economics, TAM, moat, go-to-market — one shaky answer and the momentum is gone.",
+    body: "Unit economics, TAM, moat, go-to-market. One shaky answer and the momentum is gone.",
   },
   {
     title: "Weak storytelling kills great startups",
@@ -104,7 +104,7 @@ export const showcaseTabs = [
     id: "deck",
     label: "Pitch Deck",
     title: "Auto-generated Deck",
-    body: "Every slide generated from your answers — problem, solution, market, ask.",
+    body: "Every slide generated from your answers: problem, solution, market, ask.",
   },
   {
     id: "sim",
@@ -121,7 +121,7 @@ export const showcaseTabs = [
 ];
 
 export const steps = [
-  { n: "01", title: "Tell us about your startup", body: "Answer a few questions or drop in your notes — the AI takes it from there." },
+  { n: "01", title: "Tell us about your startup", body: "Answer a few questions or drop in your notes. The AI takes it from there." },
   { n: "02", title: "AI builds your story", body: "Your scattered ideas become a sharp, investor-ready narrative and deck." },
   { n: "03", title: "Practice your pitch", body: "Rehearse against AI investors who ask the questions real VCs will." },
   { n: "04", title: "Meet investors with confidence", body: "Walk in prepared, with every weak spot already found and fixed." },
@@ -134,34 +134,9 @@ export const demo = [
 ];
 
 export const metrics = [
-  { value: 10000, suffix: "+", label: "Pitch Decks Created" },
+  { value: 10, suffix: "+", label: "Pitch Decks Created" },
   { value: 92, suffix: "%", label: "Average Pitch Improvement" },
   { value: 500, suffix: "+", label: "Investor Questions Practiced" },
-  { value: 250, prefix: "$", suffix: "M+", label: "Funding Raised by Users" },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "I found three red flags in my deck that every investor would have caught. Fixed them before my seed round and closed in six weeks.",
-    name: "Ava Chen",
-    role: "Founder & CEO, Northwind",
-    rating: 5,
-  },
-  {
-    quote:
-      "The AVC simulator is brutal in the best way. By my real pitch, no question surprised me anymore.",
-    name: "Marcus Reyes",
-    role: "Co-founder, Loopwork",
-    rating: 5,
-  },
-  {
-    quote:
-      "It turned a messy brain-dump into a story investors actually leaned into. Our meeting-to-callback rate doubled.",
-    name: "Priya Nair",
-    role: "Founder, Cadence AI",
-    rating: 5,
-  },
 ];
 
 export const pricing = [
@@ -170,8 +145,8 @@ export const pricing = [
     price: "$0",
     period: "/mo",
     tagline: "For founders getting their story straight.",
-    features: ["AI founder interview", "1 pitch deck", "Basic fundability score", "Community support"],
-    cta: "Start Free",
+    features: ["AI founder interview", "Basic fundability score", "Community support"],
+    cta: "Choose Starter",
     highlight: false,
   },
   {
@@ -186,7 +161,7 @@ export const pricing = [
       "Red flag detection",
       "PowerPoint & PDF export",
     ],
-    cta: "Start Pro Trial",
+    cta: "Choose Pro",
     highlight: true,
   },
   {
@@ -217,7 +192,7 @@ export const faqs = [
   },
   {
     q: "Does it replace a pitch coach?",
-    a: "It's not a replacement — it's a coach that's available 24/7. Use it to prepare between sessions, or on its own if you don't have a coach yet.",
+    a: "It's not a replacement. It's a coach that's available 24/7: use it to prepare between sessions, or on its own if you don't have a coach yet.",
   },
   {
     q: "Can I practice unlimited times?",
@@ -229,7 +204,7 @@ export const finalCta = {
   headline: "Your next investor meeting starts here.",
   subheadline:
     "Build your pitch. Practice with AI. Walk into every meeting prepared.",
-  cta: "Start Free Today",
+  cta: "Start Building Free",
 };
 
 export const footer = {

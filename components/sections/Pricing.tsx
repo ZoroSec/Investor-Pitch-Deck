@@ -7,7 +7,7 @@ export function Pricing() {
   return (
     <Section id="pricing">
       <SectionHead
-        eyebrow="Pricing"
+        align="center"
         title="Start free. Upgrade when you're raising."
         lede="Simple plans that scale with your round."
       />
@@ -18,8 +18,8 @@ export function Pricing() {
             <div
               className={`group relative flex h-full flex-col rounded-2xl p-7 transition-transform duration-300 hover:-translate-y-1.5 ${
                 p.highlight
-                  ? "glass-strong ring-1 ring-brand-blue/40 ring-glow"
-                  : "glass"
+                  ? "surface ring-1 ring-brand-blue/40 ring-glow"
+                  : "surface"
               }`}
             >
               {p.highlight && (
@@ -48,7 +48,7 @@ export function Pricing() {
                 className={`mt-7 inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-medium transition-transform hover:scale-[1.02] ${
                   p.highlight
                     ? "bg-gradient-to-b from-brand-blue to-brand-indigo text-white shadow-[0_12px_40px_-12px_rgba(91,140,255,0.7)]"
-                    : "glass text-fg hover:border-white/20"
+                    : "surface text-fg hover:border-white/20"
                 }`}
               >
                 {p.cta}

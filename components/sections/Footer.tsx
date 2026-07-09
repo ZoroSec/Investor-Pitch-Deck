@@ -21,7 +21,7 @@ export function Footer() {
                 key={i}
                 href="#"
                 aria-label="Social link"
-                className="grid h-9 w-9 place-items-center rounded-full glass text-fg-muted transition-colors hover:text-fg"
+                className="grid h-9 w-9 place-items-center rounded-full surface text-fg-muted transition-colors hover:text-fg"
               >
                 <Icon className="h-4 w-4" />
               </a>

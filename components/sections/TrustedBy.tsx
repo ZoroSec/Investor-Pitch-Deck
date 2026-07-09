@@ -12,7 +12,7 @@ export function TrustedBy() {
           {row.map((name, i) => (
             <span
               key={i}
-              className="whitespace-nowrap text-lg font-semibold text-white/35 grayscale transition-colors hover:text-white/70"
+              className="whitespace-nowrap text-lg font-semibold text-white/45 grayscale transition-colors hover:text-white/75"
             >
               {name}
             </span>

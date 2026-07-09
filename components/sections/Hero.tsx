@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 import { hero } from "@/lib/content";
-import { GradientText } from "@/components/ui/GradientText";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 import { HeroDashboard } from "./HeroDashboard";
 
 export function Hero() {
@@ -50,9 +50,8 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs font-medium text-fg-muted"
+            className="inline-flex items-center rounded-full glass px-3 py-1 text-xs font-medium text-fg-muted"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-blue animate-pulse-glow" />
             {hero.eyebrow}
           </motion.div>
 
@@ -62,7 +61,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.05 }}
             className="mt-5 text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
           >
-            Turn Your Startup Into an <GradientText>Investor-Ready</GradientText> Pitch
+            Turn Your Startup Into an <span className="text-brand-blue">Investor-Ready</span> Pitch
           </motion.h1>
 
           <motion.p
@@ -80,25 +79,15 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="mt-8 flex flex-wrap items-center gap-3"
           >
-            <a
-              href="#"
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-b from-brand-blue to-brand-indigo px-6 py-3 text-sm font-medium text-white shadow-[0_12px_40px_-10px_rgba(91,140,255,0.7)] transition-transform hover:scale-[1.03]"
-            >
+            <MagneticButton href="#" variant="primary">
               {hero.primaryCta}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </a>
-            <a
-              href="#demo"
-              className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-medium text-fg transition-colors hover:border-white/20"
-            >
+              <ArrowRight className="h-4 w-4" />
+            </MagneticButton>
+            <MagneticButton href="#demo" variant="secondary">
               <Play className="h-4 w-4" />
               {hero.secondaryCta}
-            </a>
+            </MagneticButton>
           </motion.div>
-
-          <p className="mt-5 text-xs text-fg-faint">
-            No credit card required · Free forever plan
-          </p>
         </div>
 
         <HeroDashboard />

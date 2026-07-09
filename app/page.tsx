@@ -7,7 +7,6 @@ import { Showcase } from "@/components/sections/Showcase";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { InvestorDemo } from "@/components/sections/InvestorDemo";
 import { Metrics } from "@/components/sections/Metrics";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { Pricing } from "@/components/sections/Pricing";
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
@@ -26,7 +25,6 @@ export default function Home() {
         <HowItWorks />
         <InvestorDemo />
         <Metrics />
-        <Testimonials />
         <Pricing />
         <FAQ />
         <FinalCTA />

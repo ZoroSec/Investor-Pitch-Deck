@@ -11,13 +11,13 @@ export function FAQ() {
 
   return (
     <Section id="faq">
-      <SectionHead eyebrow="FAQ" title="Questions, answered" />
+      <SectionHead align="center" title="Questions, answered" />
 
       <div className="mx-auto mt-12 max-w-2xl space-y-3">
         {faqs.map((f, i) => {
           const isOpen = open === i;
           return (
-            <div key={f.q} className="overflow-hidden rounded-2xl glass">
+            <div key={f.q} className="overflow-hidden rounded-2xl surface">
               <button
                 onClick={() => setOpen(isOpen ? null : i)}
                 className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"

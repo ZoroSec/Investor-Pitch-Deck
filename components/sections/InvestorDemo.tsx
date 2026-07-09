@@ -15,12 +15,12 @@ export function InvestorDemo() {
   return (
     <Section id="demo">
       <SectionHead
-        eyebrow="Live AI investor"
+        align="center"
         title="Practice the hard questions before they cost you"
         lede="Every answer gets instant, investor-grade feedback."
       />
 
-      <div className="mx-auto mt-12 max-w-2xl space-y-3 rounded-2xl glass-strong p-5 sm:p-7">
+      <div className="mx-auto mt-12 max-w-2xl space-y-3 rounded-2xl surface p-5 sm:p-7">
         {demo.map((m, i) => {
           const t = meta[m.role as keyof typeof meta];
           const Icon = t.icon;

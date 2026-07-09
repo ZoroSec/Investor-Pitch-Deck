@@ -15,7 +15,7 @@
 
   --color-fg: #e8eaf2;
   --color-fg-muted: #99a1b3;
-  --color-fg-faint: #6b7488;
+  --color-fg-faint: #8891a5;
 
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
@@ -100,11 +100,10 @@ body {
   backdrop-filter: blur(20px);
 }
 
-.text-gradient {
-  background: linear-gradient(100deg, #dfe6ff 0%, #9db4ff 40%, #c79bff 75%, #f0e6ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+/* Solid card surface: the default container. Glass is reserved for nav + hero dashboard. */
+.surface {
+  background-color: var(--color-ink-850);
+  border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .ring-glow {

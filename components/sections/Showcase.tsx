@@ -15,7 +15,7 @@ export function Showcase() {
   return (
     <Section id="showcase">
       <SectionHead
-        eyebrow="Product tour"
+        align="center"
         title="See it work end to end"
         lede="One workspace to interview, build, rehearse, and measure your pitch."
       />
@@ -107,7 +107,7 @@ function TabVisual({ index }: { index: number }) {
       {index === 2 && (
         <div className="col-span-2 rounded-lg bg-white/5 p-4">
           <div className="text-xs text-fg-muted">AI Investor</div>
-          <p className="mt-1 text-sm">&ldquo;Walk me through your unit economics — what&rsquo;s your payback period?&rdquo;</p>
+          <p className="mt-1 text-sm">&ldquo;Walk me through your unit economics. What&rsquo;s your payback period?&rdquo;</p>
           <div className="mt-3 flex gap-2">
             <span className="rounded-full bg-red-500/15 px-2 py-0.5 text-[10px] text-red-300">interrupts</span>
             <span className="rounded-full bg-brand-purple/15 px-2 py-0.5 text-[10px] text-brand-purple">follow-up</span>

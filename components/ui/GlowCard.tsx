@@ -25,7 +25,7 @@ export function GlowCard({
       onMouseMove={onMove}
       whileHover={lift ? { y: -6 } : undefined}
       transition={{ type: "spring", stiffness: 300, damping: 24 }}
-      className={`group relative overflow-hidden rounded-2xl glass p-6 ${className}`}
+      className={`group relative overflow-hidden rounded-2xl surface p-6 ${className}`}
     >
       {/* pointer glow */}
       <div

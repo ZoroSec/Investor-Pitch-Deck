@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Pitch your investor — Turn your startup into an investor-ready pitch";
+const title = "Pitch your investor: Turn your startup into an investor-ready pitch";
 const description =
   "Build compelling pitch decks, uncover weaknesses before investors do, practice live with AI investors, and raise capital with confidence.";
 

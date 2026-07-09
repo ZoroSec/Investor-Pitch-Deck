@@ -6,7 +6,7 @@ export function FinalCTA() {
   return (
     <section className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-6">
-        <Reveal className="relative overflow-hidden rounded-3xl glass-strong px-8 py-16 text-center sm:px-16">
+        <Reveal className="relative overflow-hidden rounded-3xl surface px-8 py-16 text-center sm:px-16">
           {/* glow accents */}
           <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
             <div className="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-brand-blue/20 blur-3xl animate-float" />

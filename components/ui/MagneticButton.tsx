@@ -37,7 +37,7 @@ export function MagneticButton({
   const styles =
     variant === "primary"
       ? "text-white bg-gradient-to-b from-brand-blue to-brand-indigo shadow-[0_10px_40px_-10px_rgba(91,140,255,0.7)] hover:from-[#6d99ff] hover:to-[#6f72f5]"
-      : "text-fg glass hover:border-white/20";
+      : "text-fg surface hover:border-white/20";
 
   return (
     <motion.a

@@ -1,28 +1,28 @@
-import { XCircle } from "lucide-react";
 import { problems } from "@/lib/content";
 import { Section, SectionHead } from "@/components/ui/Section";
 import { Reveal, RevealItem } from "@/components/ui/Reveal";
-import { GlowCard } from "@/components/ui/GlowCard";
 
 export function Problem() {
   return (
     <Section id="problem">
       <SectionHead
-        eyebrow="The real challenge"
         title="Fundraising is harder than building your product."
         lede="Most founders lose the room for reasons they never see coming."
       />
 
-      <Reveal stagger className="mt-14 grid gap-5 sm:grid-cols-3">
-        {problems.map((p) => (
+      <Reveal stagger className="mt-16">
+        {problems.map((p, i) => (
           <RevealItem key={p.title}>
-            <GlowCard className="h-full">
-              <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-red-500/10">
-                <XCircle className="h-5 w-5 text-red-400" />
-              </span>
-              <h3 className="text-lg font-semibold">{p.title}</h3>
-              <p className="mt-2 text-sm text-fg-muted">{p.body}</p>
-            </GlowCard>
+            <div
+              className={`group grid gap-3 py-8 transition-colors sm:grid-cols-[1fr_1.2fr] sm:gap-10 ${
+                i > 0 ? "border-t border-white/8" : ""
+              }`}
+            >
+              <h3 className="text-xl font-semibold tracking-tight text-fg transition-colors group-hover:text-brand-blue sm:text-2xl">
+                {p.title}
+              </h3>
+              <p className="max-w-prose text-fg-muted sm:pt-1">{p.body}</p>
+            </div>
           </RevealItem>
         ))}
       </Reveal>
